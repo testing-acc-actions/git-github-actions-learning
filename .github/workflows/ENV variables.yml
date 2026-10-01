@@ -1,0 +1,16 @@
+name: env var demo
+on:
+  push:
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    env:
+    PROJECT_NAME:
+    git-github-actions-learning
+    steps:
+    - name: check the repository
+      uses: actions/checkout@v4
+    - name: read project variable
+      run: echo "project name is $PROJECT_NAME"
+    - name: read my readme file 
+      run: cat README.md
