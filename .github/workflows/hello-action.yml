@@ -19,5 +19,4 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       
       - name: say hi
-        run: echo "hello from github"
-Actions!"
+        run: echo "hello from github Actions"
