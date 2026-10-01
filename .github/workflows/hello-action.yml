@@ -23,3 +23,7 @@ jobs:
 
       - name: list repository files
         run: ls -la
+
+      - name: read my readme
+        run: cat README.md
+        
